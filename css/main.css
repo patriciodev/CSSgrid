@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body, html {
+  padding: 0;
+  margin: 0;
+  background: whitesmoke;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+header {
+  padding: 2em;
+  width: 100%;
+  height: 30vh;
+}
+
+header .container {
+  margin: 0 auto;
+  text-align: center;
+  width: 70vw;
+}
+
+header .container h2 {
+  font-size: 2em;
+}
+
+header .container p {
+  font-size: .85em;
+  margin: 10px auto;
+}
+
+header .container a {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #0f0f0f;
+  padding: 10px 30px;
+}
+
+header .container .redes {
+  width: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.33333333% 33.33333333% 33.33333333%;
+      grid-template-columns: 33.33333333% 33.33333333% 33.33333333%;
+  margin: 40px auto;
+}
+
+header .container .redes i {
+  cursor: pointer;
+  display: block;
+  font-size: 1.6em;
+}
+
+main {
+  max-width: 90vw;
+  display: -ms-grid;
+  display: grid;
+  margin: 2em auto;
+}
+
+main img {
+  width: 100%;
+  margin: 5% auto;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  main img {
+    width: 100%;
+    height: 500px;
+    padding: .5em;
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */
