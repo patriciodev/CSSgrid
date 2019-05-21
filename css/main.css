@@ -49,12 +49,14 @@ header .container a {
 }
 
 header .container .redes {
-  width: 400px;
+  width: 150px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33.33333333% 33.33333333% 33.33333333%;
-      grid-template-columns: 33.33333333% 33.33333333% 33.33333333%;
-  margin: 40px auto;
+  -ms-grid-columns: (minmax(50px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin: 3% auto;
 }
 
 header .container .redes i {
@@ -67,7 +69,7 @@ main {
   max-width: 90vw;
   display: -ms-grid;
   display: grid;
-  margin: 2em auto;
+  margin: 5% auto;
 }
 
 main img {
@@ -85,7 +87,6 @@ main img {
   }
   main img {
     width: 100%;
-    height: 500px;
     padding: .5em;
     display: block;
   }
